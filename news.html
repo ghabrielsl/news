@@ -6,11 +6,25 @@
 
  @media screen and (max-width: 750px) { .he-col { width: 100% !important; }
  table { display: table; }
- div.he-col { display: inline-block !important; }
+ div.he-col { display: inline-block !important; } /*fundo das coisas */
  div.he-col.he-three, div.he-col.he-two, div.he-col.he-two-dot-four { width: 50% !important; }
  div.he-col.he-two-dot-four:last-child { width: 100% !important; }
  div.he-col.he-two-dot-four.he-last { width: 100% !important; }
  div.he-col table.he-image td { padding-left: 0 !important; padding-right: 0 !important; } }
+
+.cabecalho {width: 100% !important;}
+ div.cabecalho { display: inline-block !important; }
+
+ /* 
+ he-col - fundo das coisas
+ he-col.he-three - não identificado
+ .he-col.he-two - não identificado
+ .he-col.he-two-dot-four - menu
+ .he-col.he-two-dot-four:last-child - ultimo botão (contato)
+ .he-col.he-two-dot-four.he-last - ultimo botão (contato)
+ .he-image - imagem do cabeçalho
+ 
+ */
 body{
 	height: 100% !important;
 	width: 100% !important;
@@ -19,6 +33,42 @@ body{
 	
 }
 
+.livros::after{
+	content: '\1F4DA';
+}
+.testes::after{
+	content: '\1F4DD';
+}
+.materiais::after{
+	content: '\1F4DA';
+}
+.cursos::after{
+	content: '\1F393';
+}
+.contato::after{
+	content: '\1F4E7';
+}
+
+div.he-col.he-two-dot-four:hover{
+	background-color: #f3f3f3;
+}
+
+body{
+	background-color: #ebebeb;
+}
+
+.side-border{
+	background-color: white;
+	border: 1px solid black;
+}
+
+.visualizar{
+	background-color: white;
+}
+
+div.he-col.he-three, div.he-col.he-two{
+	background-color: black;
+}
 
 
 	</style>
@@ -32,8 +82,8 @@ body{
 			<table border="0" cellpadding="0" cellspacing="0" class="wrapper email-header" style="max-width: 750px;" width="100%">
 				<tbody>
 					<tr>
-						<td align="center" atr="" class="side-border" style="padding: 20px 0px 20px 0px; " valign="top">
-						<p style="margin: 0; text-align: center;"><span style="font-family:tahoma,geneva,sans-serif"><span style="font-size:12px"><span style="color:#696969">Caso n&atilde;o esteja visualizando, </span></span><span style="font-size:12px"><a href="#" target="_blank"><span style="color:#696969">acesse o preview aqui. </span></a></span><span style="font-size:11px"><a href="#" target="_blank"><span style="color:#696969"> </span></a><span style="color:#696969"> </span></span><span style="color:#696969"> &nbsp;</span></span></p>
+						<td align="center" atr="" class="visualizar" style="padding: 20px 0px 20px 0px; " valign="top"> <!--class="side-border" -->
+						<p style="margin: 0; text-align: center;"><span style="font-family:tahoma,geneva,sans-serif"><span style="font-size:12px"><span style="color:#696969">Caso não consiga visualizar este e-mail </span></span><span style="font-size:12px"><a href="#" target="_blank"><span style="color:#007cdc">clique aqui. </span></a></span>
 						</td>
 					</tr>
 				</tbody>
@@ -42,7 +92,7 @@ body{
 		</tr>
 		<tr>
 			<td align="center">
-			<table border="0" cellpadding="0" cellspacing="0" class="wrapper body" style="max-width: 750px;" width="100%">
+			<table border="0" cellpadding="0" cellspacing="0" style="max-width: 750px;" width="100%"> <!--class="wrapper body" -->
 				<tbody>
 					<tr>
 						<td align="center" atr="" class="side-border" style="padding: 0px 0px 0px 0px; " valign="top">
@@ -92,11 +142,11 @@ body{
 									<table border="0" cellpadding="0" cellspacing="0" width="100%">
 										<tbody>
 											<tr>
-												<td align="center" style="padding: 15px 0px 15px 0px;">
+												<td align="center">  <!--style="padding: 15px 0px 15px 0px;"-->
 												<table border="0" cellpadding="0" cellspacing="0" class="divisor" width="100%">
 													<tbody>
 														<tr>
-															<td style="line-height: 0; border-top-width: 1px; border-top-style: solid; border-top-color: #000000;">&nbsp;</td>
+															<td style="line-height: 0; border-top-width: 1px; border-top-style: solid; border-top-color: transparent;">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
@@ -121,7 +171,7 @@ body{
 			<table border="0" cellpadding="0" cellspacing="0" class="wrapper body" style="max-width: 750px;" width="100%">
 				<tbody>
 					<tr>
-						<td align="center" atr="" class="side-border" style="padding: 0px 0px 0px 0px; " valign="top">
+						<td align="center" atr="" class="side-border" style="border: 1px solid transparent;padding: 0px 0px 0px 0px; " valign="top">
 						<div class="he-wrapper he-col he-two-dot-four" style="margin: 0; display: table-cell; vertical-align: top; width: 120px;">
 						<table align="center" border="0" cellpadding="0" cellspacing="0" class="he-wrapper he-col he-two-dot-four" style="margin: 0; width: 120px;" width="100%">
 							<tbody>
@@ -141,7 +191,7 @@ body{
  " width="100%">
 													<tbody>
 														<tr>
-															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #1452c7; text-decoration: none; text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 12px;" target="_blank">LIVROS </a></td>
+															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #338FD0; text-decoration: none; text-align: center; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 13px;" target="_blank"><span class="livros"></span> LIVROS </a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -175,7 +225,41 @@ body{
  " width="100%">
 													<tbody>
 														<tr>
-															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #1452c7; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 12px;" target="_blank">TESTES </a></td>
+															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #338FD0; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 13px;" target="_blank"><span class="testes"></span> TESTES</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						
+
+						<div class="he-wrapper he-col he-two-dot-four" style="margin: 0; display: table-cell; vertical-align: top; width: 250px;">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="he-wrapper he-col he-two-dot-four" style="margin: 0; width: 250px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" class="button" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" style=" overflow: hidden;
+ text-align: center;
+ padding: 0px 0px 0px 0px;
+ ">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="
+ width: 100%;
+ display: inline-table;
+ border-collapse: separate;
+ " width="100%">
+													<tbody>
+														<tr>
+															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="width: auto !important;padding: 7px 0 !important; display: block; color: #338FD0; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 13px;" target="_blank"><span class="materiais"></span> MATERIAIS DE INTERVENÇÃO </a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -209,41 +293,7 @@ body{
  " width="100%">
 													<tbody>
 														<tr>
-															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #1452c7; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 12px;" target="_blank">MATERIAIS DE INVERTENÇÃO</a></td>
-														</tr>
-													</tbody>
-												</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						
-
-						<div class="he-wrapper he-col he-two-dot-four" style="margin: 0; display: table-cell; vertical-align: top; width: 120px;">
-						<table align="center" border="0" cellpadding="0" cellspacing="0" class="he-wrapper he-col he-two-dot-four" style="margin: 0; width: 120px;" width="100%">
-							<tbody>
-								<tr>
-									<td align="center">
-									<table align="center" border="0" cellpadding="0" cellspacing="0" class="button" width="100%">
-										<tbody>
-											<tr>
-												<td align="center" style=" overflow: hidden;
- text-align: center;
- padding: 0px 0px 0px 0px;
- ">
-												<table align="center" border="0" cellpadding="0" cellspacing="0" style="
- width: 100%;
- display: inline-table;
- border-collapse: separate;
- " width="100%">
-													<tbody>
-														<tr>
-															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #1452c7; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 12px;" target="_blank">CURSOS </a></td>
+															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #338FD0; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 13px;" target="_blank"><span class="cursos"></span> CURSOS</a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -277,7 +327,7 @@ body{
  " width="100%">
 													<tbody>
 														<tr>
-															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #1452c7; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 12px;" target="_blank">CONTATO </a></td>
+															<td style="padding: 7px 0 !important; border: 1px transparent solid; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; text-align: center; border-collapse: separate; display: block;" valign="middle"><a href="https://www.livrariadopsicologo.com.br" style="padding: 7px 0 !important; display: block; color: #338FD0; text-decoration: none; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 13px;" target="_blank"><span class="contato"></span> CONTATO</a></td>
 														</tr>
 													</tbody>
 												</table>
@@ -301,7 +351,7 @@ body{
 			<table border="0" cellpadding="0" cellspacing="0" class="wrapper body" style="max-width: 750px;" width="100%">
 				<tbody>
 					<tr>
-						<td align="center" atr="" class="side-border" style="padding: 0px 0px 0px 0px; " valign="top">
+						<td align="center" atr="" class="side-border" style="padding: 5px 0px 5px 0px; " valign="top">
 						<div class="he-wrapper he-col he-twelve he-last" style="margin: 0; display: table-cell; vertical-align: top; width: 750px;">
 						<table align="center" border="0" cellpadding="0" cellspacing="0" class="he-wrapper he-col he-twelve" style="margin: 0; width: 750px;" width="100%">
 							<tbody>
@@ -769,7 +819,7 @@ body{
 		</tr>
 		<tr>
 			<td align="center">
-			<table border="0" cellpadding="0" cellspacing="0" class="wrapper email-footer" style="max-width: 600px;" width="100%">
+			<table border="0" cellpadding="0" cellspacing="0" class="wrapper email-footer" style="max-width: 750px;" width="100%">
 				<tbody>
 					<tr>
 						<td align="center" atr="" class="side-border" style="padding: 20px 0px 20px 0px; " valign="top">
@@ -783,6 +833,5 @@ body{
 	</tbody>
 </table>
 
-<p><img src="https://www.livrariadopsicologo.com.br" style="visibility: hidden;" /></p>
 </body>
 </html>
